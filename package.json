@@ -23,6 +23,6 @@
       "pre-commit": "npm prettier-reg"
   },
   "lint-staged": {
-       "*.js": ["npm run prettier-reg", "git add"]
+       "*.js": ["npm run prettier-reg", "git commit"]
   }
 }
