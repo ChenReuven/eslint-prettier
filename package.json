@@ -1,0 +1,21 @@
+{
+  "name": "eslint-prettier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier-reg": "prettier ./src/** --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "1.12.1"
+  },
+  "dependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.4",
+    "pretty-quick": "^1.4.1"
+  }
+}
