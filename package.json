@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "lint-staged",
-    "prettier-reg": "prettier ./src/** --write"
+    "prettier": "prettier ./src/** --write"
   },
   "keywords": [],
   "author": "",
@@ -19,10 +19,7 @@
     "lint-staged": "^7.0.4",
     "pretty-quick": "^1.4.1"
   },
-  "husky": {
-      "pre-commit": "npm prettier-reg"
-  },
   "lint-staged": {
-       "*.js": ["npm run prettier-reg", "git commit"]
+       "*.js": ["npm run prettier", "git commit"]
   }
 }
