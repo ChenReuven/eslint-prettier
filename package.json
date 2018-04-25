@@ -19,8 +19,6 @@
     "pretty-quick": "^1.4.1"
   },
   "husky": {
-    "hooks": {
       "pre-commit": "npm prettier-reg"
-    }
   }
 }
