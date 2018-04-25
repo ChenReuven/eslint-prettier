@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged",
     "prettier-reg": "prettier ./src/** --write"
   },
   "keywords": [],
@@ -20,5 +21,8 @@
   },
   "husky": {
       "pre-commit": "npm prettier-reg"
+  },
+  "lint-staged": {
+       "*.js": ["npm run prettier-reg", "git add"]
   }
 }
